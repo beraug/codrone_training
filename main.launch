@@ -16,7 +16,7 @@
     "<launch>\n",
     "\n",
     "    <!-- Load the parameters for the algorithm -->\n",
-    "    <rosparam command=\"load\" file=\"$(find codrone_training)/config/qlearn_params.yaml\" />\n",
+    "    <rosparam command=\"load\" file=\"$(find codrone_training)/qlearn_params.yaml\" />\n",
     "\n",
     "    <!-- Launch the training system -->\n",
     "    <node pkg=\"codrone_training\" name=\"gym_train\" type=\"start_training.py\" output=\"screen\"/> \n",
