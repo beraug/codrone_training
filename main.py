@@ -1,0 +1,48 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "<!--\n",
+    "    Date of creation: 5/II/2018\n",
+    "    Application created by: Ricardo Tellez <rtellez@theconstructsim.com>\n",
+    "    The Construct http://www.theconstructsim.com\n",
+    "    License LGPLV3 << Basically means you can do whatever you want with this!\n",
+    "-->\n",
+    "\n",
+    "<launch>\n",
+    "\n",
+    "    <!-- Load the parameters for the algorithm -->\n",
+    "    <rosparam command=\"load\" file=\"$(find codrone_training)/config/qlearn_params.yaml\" />\n",
+    "\n",
+    "    <!-- Launch the training system -->\n",
+    "    <node pkg=\"codrone_training\" name=\"gym_train\" type=\"start_training.py\" output=\"screen\"/> \n",
+    "</launch>"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.6.6"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}
