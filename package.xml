@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package>
-  <name>drone_training</name>
+  <name>codrone_training</name>
   <version>0.0.1</version>
-  <description>The drone_training package</description>
+  <description>The codrone_training package</description>
 
   <!-- One maintainer tag required, multiple allowed, one person per tag --> 
   <!-- Example:  -->
